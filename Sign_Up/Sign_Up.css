@@ -5,7 +5,10 @@
     padding: 40px; /* Add padding inside the container */
     margin-top: 10%; /* Set top margin as a percentage of the viewport height */
     overflow: hidden; /* Hide any overflowing content */
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Styles for the password visibility icon */
@@ -22,6 +25,7 @@
     display: flex; /* Use flex layout for the element */
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 /* Styles for the main signup text */
@@ -32,7 +36,7 @@
 
 /* Styles for additional signup text */
 .signup-text1 {
-    text-align: right; /* Right-align text */
+    text-align: center; /* Right-align text */
 }
 
 .signup-text1 span {
@@ -44,6 +48,7 @@
 /* Styles for the signup form section */
 .signup-form {
     width: 100%; /* Use full width */
+    max-width: 300px;
 }
 
 /* Styles for the overall signup container */
@@ -72,7 +77,8 @@
 .form-group {
     margin-bottom: 20px; /* Add bottom margin to form groups */
     width: 100%;
-    max-width: 200px; /* Set maximum width */
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group label {
@@ -106,7 +112,7 @@
 /* Styles for buttons in the signup form */
 .btn {
     width: 100%; /* Set width of buttons */
-    max-width: 200px;
+    max-width: 300px;
     padding: 10px 20px; /* Set padding for buttons */
     font-size: 16px; /* Set font size for buttons */
     border: none; /* Remove button borders */
